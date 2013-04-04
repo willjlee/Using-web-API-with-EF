@@ -1,0 +1,12 @@
+Notes: Web API with Entity Framework
+
+http://www.asp.net/web-api/overview/creating-web-apis/using-web-api-with-entity-framework/using-web-api-with-entity-framework,-part-1
+
+Covers EF, knockout.js (for UI), forms authentication
+----
+
+See link for program design diagrams.
+
+Entity framework maps objects in code to entities in databse. when objects are changed, database is updated automatically.
+
+This project is an internet application, not a web api application like the previous tutorials. creating as an internet application automatically creates a database and account register/login functionality.
