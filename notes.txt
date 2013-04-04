@@ -10,3 +10,18 @@ See link for program design diagrams.
 Entity framework maps objects in code to entities in databse. when objects are changed, database is updated automatically.
 
 This project is an internet application, not a web api application like the previous tutorials. creating as an internet application automatically creates a database and account register/login functionality.
+
+EF can be approached database-first, code-first, or model-first. Using code first here.
+
+POCO: plain old CLR object
+
+EF will default to using the Id property in a model as a primary key, meaning it will be generated automatically when creating a new object.
+
+"The ScaffoldColumn attribute tells ASP.NET MVC to skip the Id property when generating an editor form. The Required attribute is used to validate the model. It specifies that the Name property must be a non-empty string. "
+
+" the OrderDetail class defines properties named OrderId and ProductId. Entity Framework will infer that these properties represent foreign keys, and will add foreign-key constraints to the database."
+
+MUST COMPILE AFTER CREATING MODELS FOR EF TO CREATE DATABASE FROM THEM
+
+circular references in objects will mess up default serialization formatter
+	-see webapiconfig.cs in this project for fix
