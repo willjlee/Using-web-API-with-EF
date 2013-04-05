@@ -25,3 +25,9 @@ MUST COMPILE AFTER CREATING MODELS FOR EF TO CREATE DATABASE FROM THEM
 
 circular references in objects will mess up default serialization formatter
 	-see webapiconfig.cs in this project for fix
+
+When creating a controller, create using read/write with EF and give it a new data context to automatically generate a data context and a controller complete with CRUD operations for your model. also creates a data connection string in web.config
+
+"A DbSet represents a set of entities that can be queried" (in db context)
+
+See contextinitializer for example of how to initialize database. Not something you normally want to do IRL, in case someone changes a model and drops your database.

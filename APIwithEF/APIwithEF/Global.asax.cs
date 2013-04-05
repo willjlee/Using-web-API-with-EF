@@ -23,6 +23,10 @@ namespace APIwithEF
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            //initialize db
+            System.Data.Entity.Database.SetInitializer(
+                new APIwithEF.Models.OrdersContextInitializer());
         }
     }
 }
