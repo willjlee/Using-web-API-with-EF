@@ -12,6 +12,7 @@ using APIwithEF.Models;
 
 namespace APIwithEF.Controllers
 {
+    [Authorize(Roles="Administrator")]
     public class AdminController : ApiController
     {
         private OrdersContext db = new OrdersContext();
