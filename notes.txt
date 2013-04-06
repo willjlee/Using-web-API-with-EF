@@ -34,4 +34,9 @@ See contextinitializer for example of how to initialize database. Not something 
 
 Adding a view: Add method to HomeController.cs, right click within it and add a strongly typed view linked to related model. Add action link within _Layout.cshtml
 
-Limit view to admin: filters>initializesimplemembershipattribute.cs: add role and user. In homecontroller, add authorize attribute to admin method. add authorize to admin controller class
+Limit view to admin: filters>initializesimplemembershipattribute.cs: add role and user. In homecontroller, add authorize attribute to admin method. add authorize to admin controller class.
+
+knockout.js helps bind controls to data. create view-model, then bind html markup to it. See Admin.cshtml.
+
+
+
