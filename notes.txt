@@ -38,5 +38,7 @@ Limit view to admin: filters>initializesimplemembershipattribute.cs: add role an
 
 knockout.js helps bind controls to data. create view-model, then bind html markup to it. See Admin.cshtml.
 
+DTO: data trasnfer object. in this example, used to limit what product information is sent to users. Also used to flatten order data (no nested entities).
 
+be wary of data accepted in PUT and POST requests. Note changed PostOrder method to only use productID and quantity. Invalid IDs will be rejected by the database.
 
